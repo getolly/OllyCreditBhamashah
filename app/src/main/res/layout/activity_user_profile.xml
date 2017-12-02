@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ollycredit.ui.user_profile.user_details.UserProfileActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_user_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_15"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/margin_module_7"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctb_user_profile"
+            style="@style/ctb_collapse_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                app:theme="@style/ThemeOverlay.AppCompat"
+                app:title="Verify Your PAN card"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="fonts/muli-semibold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:paddingBottom="@dimen/margin_module_1.5"
+                android:paddingLeft="@dimen/margin_module_2"
+                android:paddingTop="@dimen/margin_module_2.5"
+                android:text="Profile DEtails"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/margin_module_9"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_module_2"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_phone"/>
+
+                        <TextView
+                            android:id="@+id/tv_user_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_module_9"
+                            android:tag="date"
+                            android:text="user phone number"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/body_2_reg"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            android:background="@color/gray_main"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/margin_module_9"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_module_2"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_email"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_module_9"
+                            android:layout_marginTop="@dimen/margin_module_2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_user_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:tag="date"
+                                android:text="user email"
+                                android:textColor="@color/blue_text"
+                                android:textSize="@dimen/body_2_reg"/>
+
+                            <TextView
+                                android:id="@+id/tv_user_email_status"
+                                fonthPath="fonts/muli-bold.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:tag="date"
+                                android:text="email status"
+                                android:textAllCaps="true"
+                                android:textColor="@color/blue_text"
+                                android:textSize="@dimen/caption_2_caps_muli_bold"
+                                tools:ignore="MissingPrefix"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.3"
+                            android:background="@color/gray_main"/>
+
+
+                        <ImageView
+                            android:id="@+id/iv_user_resend_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/margin_module_2"
+                            android:layout_marginTop="@dimen/margin_module_3"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_resend"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fl_change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/margin_module_9"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_module_2"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_password"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_user_change_password"
+                            fonthPath="fonts/muli-bold.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_module_9"
+                            android:tag="date"
+                            android:text="Change Password"
+                            android:textAllCaps="true"
+                            android:textColor="@color/cyan_main"
+                            android:textSize="@dimen/caption_2_caps_muli_bold"
+                            tools:ignore="MissingPrefix"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/no_pre_user_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    fontPath="fonts/muli-semibold.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:paddingBottom="@dimen/margin_module_1.5"
+                    android:paddingLeft="@dimen/margin_module_2"
+                    android:paddingTop="@dimen/margin_module_2.5"
+                    android:text="Kyc Details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/caption_1_semi_bold"
+                    android:visibility="visible"
+                    tools:ignore="MissingPrefix"/>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_module_7"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/cardview_default_radius"
+                    app:cardElevation="@dimen/cardview_default_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:id="@+id/fl_user_pan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/margin_module_9"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_module_2"
+                                android:tint="@color/blue_text"
+                                app:srcCompat="@drawable/ic_pancard"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_module_9"
+                                android:layout_marginTop="@dimen/margin_module_2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_user_pan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:tag="date"
+                                    android:text="PAN card"
+                                    android:textColor="@color/gray_main"
+                                    android:textSize="@dimen/body_2_reg"/>
+
+                                <TextView
+                                    android:id="@+id/tv_user_pan_status"
+                                    fonthPath="fonts/muli-bold.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:tag="date"
+                                    android:text="LINK PAN CARD"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_main"
+                                    android:textSize="@dimen/caption_2_caps_muli_bold"
+                                    tools:ignore="MissingPrefix"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="bottom"
+                                android:alpha="0.3"
+                                android:background="@color/gray_main"/>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_user_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/margin_module_9"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_module_2"
+                                android:tint="@color/blue_text"
+                                app:srcCompat="@drawable/ic_debitcard"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_module_9"
+                                android:layout_marginTop="@dimen/margin_module_2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_user_debit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:tag="date"
+                                    android:text="Bank Account"
+                                    android:textColor="@color/gray_main"
+                                    android:textSize="@dimen/body_2_reg"/>
+
+                                <TextView
+                                    android:id="@+id/tv_user_debit_status"
+                                    fonthPath="fonts/muli-bold.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:tag="date"
+                                    android:text="LINK band account"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_main"
+                                    android:textSize="@dimen/caption_2_caps_muli_bold"
+                                    tools:ignore="MissingPrefix"/>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="bottom"
+                                android:alpha="0.3"
+                                android:background="@color/gray_main"/>
+
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/fl_user_kyc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/margin_module_9"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/margin_module_2"
+                                android:tint="@color/blue_text"
+                                app:srcCompat="@drawable/ic_kyc_new"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_module_9"
+                                android:layout_marginTop="@dimen/margin_module_2"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_user_kyc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:tag="date"
+                                    android:text="E-KYC"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_main"
+                                    android:textSize="@dimen/body_2_reg"/>
+
+                                <TextView
+                                    android:id="@+id/tv_user_kyc_status"
+                                    fonthPath="fonts/muli-bold.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:tag="date"
+                                    android:text="Submit E-kyc"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_main"
+                                    android:textSize="@dimen/caption_2_caps_muli_bold"
+                                    tools:ignore="MissingPrefix"/>
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

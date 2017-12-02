@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/white"
+>
+
+    <FrameLayout
+        android:layout_weight="0.45"
+        android:background="@color/blue_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="image/Animation"
+            android:textAllCaps="true"
+            android:textColor="@color/red_msg"
+            android:textSize="@dimen/body_2_caps_muli_bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.55"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_module_4"
+            android:layout_marginTop="@dimen/margin_module_4"
+            android:gravity="left"
+            android:paddingLeft="@dimen/margin_module_2"
+            android:text="@string/str_card_on_way"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/headline_regular_muli_regular" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_module_5"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:layout_marginRight="@dimen/margin_module_2"
+            android:text="@string/str_msg_signup_complete"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/body_1_muli_bold" />
+
+        <Button
+            android:id="@+id/btn_terms_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:layout_marginRight="@dimen/margin_module_2"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:text="@string/str_read_termsconditions"
+            android:textAllCaps="false"
+            android:textColor="@color/cyan_light"
+            android:textSize="@dimen/label_muli_bold" />
+
+    </LinearLayout>
+</LinearLayout>

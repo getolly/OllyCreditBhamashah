@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ollycredit.ui.terms_conditions.TermsConditionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_terms"
+        app:title="Terms and Condition"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_arrow_back_white"/>
+
+
+    <include
+        android:id="@+id/view_terms_condition"
+        layout="@layout/layout_terms_condition_viewpage"
+        />
+
+
+</LinearLayout>

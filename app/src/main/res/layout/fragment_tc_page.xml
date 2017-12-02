@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tc_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_module_3"
+        android:layout_marginLeft="@dimen/margin_module_2.5"
+        android:layout_marginRight="@dimen/margin_module_2"
+        android:layout_marginTop="@dimen/margin_module_3"
+        android:text="Title content"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/title_reg"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/tc_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green_main"
+            android:scaleType="fitCenter"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="@dimen/margin_module_0.5"
+            android:scrollbarStyle="insideInset"
+            android:scrollbarThumbVertical="@color/white"
+            android:scrollbars="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/margin_module_2">
+
+                <TextView
+                    android:id="@+id/tc_policy_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/body_2_muli_bold"/>
+
+
+            </FrameLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

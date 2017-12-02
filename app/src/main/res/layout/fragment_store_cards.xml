@@ -1,0 +1,56 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    tools:context="com.ollycredit.ui.repayments.store_cards.StoreCardsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_stored_card"
+            android:layout_width="match_parent"
+            android:minHeight="240dp"
+            android:layout_height="wrap_content"/>
+
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/pager_saved_card"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_margin="@dimen/margin_module_1"-->
+            <!--android:background="@color/white"/>-->
+
+
+        <!--<com.payu.payuui.Widget.CirclePageIndicator-->
+            <!--android:id="@+id/indicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/text_view_issuing_bank_down_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:textColor="@color/cb_errorRed"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+

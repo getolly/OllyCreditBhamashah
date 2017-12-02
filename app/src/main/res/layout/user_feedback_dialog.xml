@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/margin_module_2.5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_module_2.5"
+        android:paddingLeft="@dimen/margin_module_2.5"
+        android:paddingRight="@dimen/margin_module_2.5"
+        android:text="@string/feedback_us"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/headline_regular_muli_regular"/>
+
+    <TextView
+        fontPath="fonts/muli-semibold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_module_2.5"
+        android:paddingLeft="@dimen/margin_module_2.5"
+        android:paddingRight="@dimen/margin_module_2.5"
+        android:text="@string/feedback_comment"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/body_1_semi_bold"
+        tools:ignore="MissingPrefix"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_module_2.5"
+        android:paddingRight="@dimen/margin_module_2.5">
+
+
+        <EditText
+            android:id="@+id/edit_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_module_2.5"
+            android:gravity="bottom"
+            android:hint="@string/share_thoughts"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minHeight="@dimen/margin_module_12"
+            android:backgroundTint="@color/cyan_main"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/label_muli_bold"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_6"
+        android:paddingLeft="@dimen/margin_module_1"
+        android:paddingRight="@dimen/margin_module_2.5">
+
+        <Button
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/muli-bold.ttf"
+            android:id="@+id/button_cancel_user_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/transparent"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/cyan_main"
+            android:textSize="@dimen/caption_2_muli_bold"
+            />
+
+        <Button
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/muli-bold.ttf"
+            android:id="@+id/button_send_user_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:text="SEND FEEDBACK"
+            android:textAllCaps="true"
+            android:textColor="@color/cyan_main"
+            android:textSize="@dimen/caption_2_muli_bold"/>
+
+    </FrameLayout>
+
+</LinearLayout>

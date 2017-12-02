@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/payback_notify_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_6"
+        android:background="@color/green_main"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_payback_days"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_module_6"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ic_reminder_wrapper"
+            android:drawablePadding="@dimen/margin_module_2"
+            android:gravity="start|center"
+            android:paddingLeft="@dimen/margin_module_2"
+            android:text="@string/str_days_repay"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body_1_muli_bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_10.5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_module_1.5"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-5sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:tint="@color/blue_text"
+                        android:id="@+id/viewRupeeSymbol"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="2sp"
+                        app:srcCompat="@drawable/ic_rupee_symbol"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_payback_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20sp"
+                        android:text="12345"
+                        android:textColor="@color/blue_text"
+                        android:textSize="@dimen/headline_regular_muli_regular"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    fontPath="fonts/muli-semibold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="2sp"
+                    android:layout_marginLeft="4sp"
+                    android:layout_marginTop="6dp"
+                    android:text="Total"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/caption_2_muli_bold"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_minimum_due_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_weight="0.5"
+                android:minWidth="120dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="1sp"
+                        android:background="@drawable/ic_rupee_symbol_wrapper"
+                        android:backgroundTint="@color/gray_main"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_payback_min_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12sp"
+                        android:drawableTint="@color/blue_main"
+                        android:gravity="bottom"
+                        android:text="12345"
+                        android:textColor="@color/gray_main"
+                        android:textSize="@dimen/caption_1_caps_semi_bold"/>
+
+                </FrameLayout>
+
+                <TextView
+                    fontPath="fonts/muli-semibold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="4sp"
+                    android:layout_marginTop="2dp"
+                    android:text="Min Due"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_main"
+                    android:textSize="@dimen/caption_1_caps_semi_bold"
+                    tools:ignore="MissingPrefix"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_payback"
+            style="@style/btn_blue_style"
+            fontPath="fonts/muli-bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:layout_marginRight="@dimen/margin_module_2"
+            android:minHeight="@dimen/margin_module_6"
+            android:paddingLeft="@dimen/margin_module_2"
+            android:paddingRight="@dimen/margin_module_2"
+            android:text="Repay credit"
+            tools:ignore="MissingPrefix"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_module_2"
+        android:layout_marginRight="@dimen/margin_module_2"
+        android:alpha="0.5"
+        android:background="@color/gray_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_6"
+        android:layout_marginBottom="@dimen/margin_module_2"
+        android:layout_marginRight="@dimen/margin_module_2"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/toolbar_card_copy_iv"
+            android:layout_width="@dimen/margin_module_3"
+            android:layout_height="@dimen/margin_module_3"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:scaleType="center"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_info_outline_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:gravity="start|center"
+            android:text="How repayment works?"
+            android:textAllCaps="false"
+            android:textColor="@color/gray_main"
+            android:textSize="@dimen/caption_1_muli_bold"
+            android:visibility="visible"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="110dp"
+            android:layout_height="match_parent"/>
+
+
+        <ImageButton
+            android:id="@+id/ib_payback_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_module_2"
+            android:background="@color/transparent"
+            android:paddingLeft="@dimen/margin_module_2"
+            android:paddingRight="@dimen/margin_module_2"
+            android:textColor="@color/cyan_main"
+            android:textSize="@dimen/body_1_muli_bold"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_arrow_down__24dp"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/repay_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

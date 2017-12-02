@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/otp_dialog_layout">
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/pin_one"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/pin_two"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_module_1"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/pin_three"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_module_1"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/pin_four"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_module_1"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="1"/>
+
+
+</LinearLayout>
+
+    

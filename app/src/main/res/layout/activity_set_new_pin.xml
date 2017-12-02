@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:paddingBottom="@dimen/margin_module_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/toolbar_pin"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="?attr/actionBarSize">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_logoolly_blue"/>
+
+                <TextView
+                    android:id="@+id/text_in_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:layout_gravity="end|center"
+                    android:gravity="center"
+                    tools:text="@string/str_page_no_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_muli_bold"
+                    android:textStyle="bold"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:text="Create your 4-digit PIN code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/headline_regular_muli_regular"/>
+            <com.ollycredit.utils.custom_views.PasscodeNumberView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passcode_view"
+                android:layout_marginTop="@dimen/margin_module_5" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:arcColor="@color/cyan_main"
+        app:arcWidth="3dp"
+        android:layout_gravity="right|bottom"
+        app:finalIcon="@drawable/ic_arrow_forward"
+        >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_pin_submitPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/margin_module_2"
+        app:srcCompat="@drawable/ic_arrow"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"/>
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+</android.support.design.widget.CoordinatorLayout>

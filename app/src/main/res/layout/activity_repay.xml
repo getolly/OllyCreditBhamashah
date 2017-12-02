@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.ollycredit.ui.card.card_history.repay_credit.repay.ConfirmRepayActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar_repay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:expanded="true">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_repay"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                    app:navigationIcon="@drawable/ic_arrow_back_white"
+                    app:theme="@style/ThemeOverlay.AppCompat"
+                    app:title="Repay your credit"/>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_repay_amount_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_block"
+                    android:tint="@color/red_error"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module_2"
+                    android:padding="@dimen/margin_module_1"
+                    android:text="Something wrong while processing your payment. Please try again"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red_error"
+                    android:textSize="@dimen/body_2_muli_bold"/>
+
+                <TextView
+                    android:id="@+id/tv_repay_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_module_1"
+                    android:text="need help? we can help"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_module_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_module_1"
+                    android:layout_marginLeft="@dimen/margin_module_1"
+                    android:text="Confirm payment details"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/caption_1_caps_muli_bold"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/cardview_default_radius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/margin_module_1"
+                        android:paddingLeft="@dimen/margin_module_2"
+                        android:paddingRight="@dimen/margin_module_2"
+                        android:paddingTop="@dimen/margin_module_2"
+                        android:weightSum="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_payback_amount_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="left|top"
+                                android:gravity="bottom"
+                                android:text="@string/str_demo_cash"
+                                android:textColor="@color/blue_main"
+                                android:textSize="@dimen/headline_big"/>
+
+
+                            <TextView
+                                android:id="@+id/tv_payback_amount_used"
+                                fontPath="fonts/muli-semibold.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right|top"
+                                android:gravity="bottom"
+                                android:text="@string/str_demo_cash"
+                                android:textColor="@color/blue_text"
+                                android:textSize="@dimen/title_semi_bold"
+                                tools:ignore="MissingPrefix"/>
+
+                        </FrameLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/margin_module_2"
+                            android:layout_marginTop="@dimen/margin_module_0.5"
+                            android:weightSum="1">
+
+                            <TextView
+                                fontPath="fonts/muli-semibold.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center"
+                                android:text="To pay this month"
+                                android:textAllCaps="true"
+                                android:textColor="@color/gray_main"
+                                android:textSize="@dimen/caption_1_semi_bold"
+                                tools:ignore="MissingPrefix"/>
+
+                            <TextView
+                                fontPath="fonts/muli-semibold.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center"
+                                android:text="Total used"
+                                android:textAllCaps="true"
+                                android:textColor="@color/gray_main"
+                                android:textSize="@dimen/caption_1_semi_bold"
+                                tools:ignore="MissingPrefix"/>
+
+                        </FrameLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.45dp"
+                            android:alpha="0.2"
+                            android:background="@color/gray_main"/>
+
+
+                        <Button
+                            android:id="@+id/btn_payback_amount_edit"
+                            fontPath="fonts/muli-bold.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_module_4.5"
+                            android:layout_marginTop="@dimen/margin_module_1"
+                            android:background="@color/transparent"
+                            android:text="Edit amount"
+                            android:textColor="@color/cyan_main"
+                            android:textSize="@dimen/caption_2_muli_bold"
+                            tools:ignore="MissingPrefix"
+                            />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/btn_payback_amount_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_module_6"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_module_2"
+                    android:background="@drawable/button_shape"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_module_4"
+                    android:paddingRight="@dimen/margin_module_4"
+                    android:text="Confirm payment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cyan_light"
+                    android:textSize="@dimen/label_muli_bold"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_1"
+                android:layout_marginLeft="@dimen/margin_module_1"
+                android:layout_marginTop="@dimen/margin_module_1"
+                android:gravity="center"
+                android:text="you will be redirected to payu kind of thing where you will have to pay with your debit card kind of thing"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_caps_muli_bold"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

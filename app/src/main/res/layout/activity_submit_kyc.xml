@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.card.verify.kyc.kyc_register.AppointKycActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_verifypan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_15"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/margin_module_7"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctb_kyc"
+            style="@style/ctb_collapse_style"
+            fontPath="fonts/muli-semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingPrefix">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_kyc"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                app:theme="@style/ThemeOverlay.AppCompat"
+                app:title="Submit your KYC"/>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_6"
+                android:text="Get \u20B91500 of credit by submitting your KYC"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/headline_regular_muli_regular"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_4"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:text="To collect your KYC we need to meet you in person to take your ID details and fingerprint"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/body_3_muli_bold"
+                />
+
+            <Button
+                android:id="@+id/btn_kyc_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_2.5"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_2.5"
+                android:background="@drawable/button_shape"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:gravity="center"
+                android:text="Register for KYC appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/cyan_light"
+                android:textSize="@dimen/label_muli_bold"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_loadingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_module_7"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

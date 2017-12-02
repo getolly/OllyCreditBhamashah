@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.ollycredit.ui.card.credit_limit.CreditLimitActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/margin_module_7"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctb_limit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            android:minHeight="@dimen/margin_module_7"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <include
+                android:id="@+id/view_limit_progress"
+                layout="@layout/layout_limit_progress"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_cardLimit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_module_7"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                app:theme="@style/ThemeOverlay.AppCompat"
+                app:title="Credit Limit"
+                app:titleTextColor="@color/white"
+                />
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="fonts/muli-semibold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_module_2.5"
+                android:paddingLeft="@dimen/margin_module_2"
+                android:paddingTop="@dimen/margin_module_2.5"
+                android:text="Increase your credit limit"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_credit_limit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/layout_credit_limit_list"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_loadingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="?actionBarSize"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

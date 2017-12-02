@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_module_2">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_module_2">
+
+    <ImageView
+        android:id="@+id/expan_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_calender"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_icon_data"
+        android:textColor="@color/green_main"
+        android:textSize="8sp"
+        android:layout_gravity="center"
+        tools:text="1"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/expan_title_tv"
+            android:textSize="@dimen/body_2_reg"
+            android:textColor="@color/blue_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dummy text for title"/>
+
+
+        <TextView
+            fontPath="fonts/muli-semibold.ttf"
+            android:id="@+id/expan_body_tv"
+            android:layout_marginTop="@dimen/margin_module_2"
+            android:textSize="@dimen/caption_1_semi_bold"
+            android:text="dummy text for the content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingPrefix"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

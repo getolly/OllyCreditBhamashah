@@ -1,0 +1,351 @@
+<resources>
+    <string name="terms_and_condition_dialog_title"><![CDATA[Olly terms & conditions]]></string>
+
+    <string name="terms_and_condition_dialog_agreed">
+        I agree with all thats stated below and
+        something more more
+    </string>
+    <string name="terms_and_condition_btn">I agree</string>
+    <string name="app_name">Olly</string>
+
+    <string name="landing_intro_text">
+        <![CDATA[
+        Sign up with your University email and <br>
+        we\'ll give you some credit just right now
+        ]]>
+    </string>
+    <string name="landing_intro_desc_text">
+        <![CDATA[
+
+        <font color=\"#003781\">Studying? <br>
+        Need some extra $? <br></font>
+        <font color=\"#00bcd4\">Get Olly credit in <br>
+        Seconds!</font>
+
+        ]]>
+    </string>
+    <string name="pay_now_btn">PAY NOW</string>
+    <string name="sign_up_button">I want Olly, sign up</string>
+    <string name="have_account">I have an account</string>
+    <string name="save_button">Save and go</string>
+    <string name="get_olly_credit">Get Olly credit now</string>
+    <string name="confirm">Confirm</string>
+    <string name="resend_pin">Resend message</string>
+    <string name="change">Change</string>
+    <string name="login_btn">Login</string>
+    <string name="remind_password">Remind password</string>
+    <string name="send_pin">Send PIN</string>
+    <string name="forget_password">I forget my password</string>
+    <string name="login_sign_up">Don\'t have an account? Sign up</string>
+
+    <string name="olly_card">Olly Card</string>
+    <string name="credit_center">Credit Center</string>
+    <string name="olly_card_number">Olly Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="valid_through">Date of Exp</string>
+    <string name="current_olly_credit">your current olly credit</string>
+
+    <string name="register_full_name">Your full name</string>
+    <string name="register_phone_number">Enter your phone number</string>
+    <string name="register_password">Create a password</string>
+    <string name="login_password">Your password</string>
+    <string name="register_university">Your university</string>
+    <string name="register_university_email">University email</string>
+    <string name="register_phone_desc">
+        <![CDATA[
+        Phone have to start with <strong>+</strong>
+        ]]>
+    </string>
+    <string name="card_no_data_desc">
+        <![CDATA[
+        <br>
+        <font color="#003781"><strong>Go shopping with Olly Card!</strong></font> <br><br>
+        <font color="#8d9ec6">
+        Start using Olly Card now - just type in card <br>
+        details above at the checkout and enjoy!
+        </font>
+        ]]>
+    </string>
+    <string name="register_university_email_desc">
+        <![CDATA[
+        Olly credit can be given to <strong>university email</strong> Holders only
+        ]]>
+    </string>
+    <string name="sent_pin_code_intro">
+        <![CDATA[
+        We sent you a PIN code to your<br>
+        number. Type it here to get verified.
+        ]]>
+    </string>
+
+
+    <string name="credit_center_facebook_title">We Like Facebook</string>
+    <string name="credit_center_linkedin_title">Professional @ Linkedin</string>
+    <string name="credit_center_uni_email_title">Link your Uni Email</string>
+
+    <string name="credit_center_facebook_desc">
+        <![CDATA[
+        Connect your FB account and get additional $30 of Olly Credit.
+        ]]>
+    </string>
+    <string name="credit_center_linkedin_desc">
+        <![CDATA[
+        Connect your linkedin account and get additional $30 of Olly Credit.
+        ]]>
+    </string>
+    <string name="credit_center_uni_email_desc">
+        <![CDATA[
+        Hurry up! Once you link your official university email you\'ll get initial of $20 of Olly Credit!
+        ]]>
+    </string>
+
+    <string name="credit_center_facebook_connect">CONNECT FACEBOOK</string>
+    <string name="credit_center_linkedin_connect">CONNECT LINKEDIN</string>
+    <string name="credit_center_uni_email_connect">LINK MY UNIVERSITY EMAIL</string>
+
+    <string name="credit_center_facebook_organization">facebook</string>
+    <string name="credit_center_linkedin_organization">linkedin</string>
+    <string name="credit_center_uni_email_organization">email</string>
+
+    <string name="phone_number_fragment_text">Is this your phone number?</string>
+    <string name="phone_number_fragment_sign_up_button">Sign Up</string>
+    <string name="phone_dialog_btn">Confirm and go</string>
+    <string name="phone_dialog_text_view">Phone number</string>
+
+    <string name="login_phone_fragment_desc">
+        <![CDATA[
+        Enter your phone number associated <br>
+        with Olly account
+        ]]>
+    </string>
+    <string name="login_phone_fragment_login_btn">Login</string>
+
+    <string name="pin_fragment_btn">Confirm and go</string>
+    <string name="pin_fragment_desc">
+        <![CDATA[
+        We\'ve sent you a SMS message.<br>
+        Type in the mobile PIN you received.
+        ]]>
+    </string>
+
+
+    <string name="pin_fragment_desc_part1">
+        <![CDATA[
+        We\'ve sent you a SMS message on
+        ]]>
+    </string>
+
+    <string name="pin_fragment_desc_part2">
+        <![CDATA[
+        Type in the mobile PIN you received.
+        ]]>
+    </string>
+
+    <string name="change_pin_fragment_btn">Confirm and go</string>
+    <string name="change_pin_fragment_desc">
+        <![CDATA[
+        Almost there!<br>
+        To ensure your security please change the<br>
+        mobile PIN we sent to a new one.
+        ]]>
+    </string>
+
+    <string name="check_pin_btn">Login</string>
+    <string name="check_pin_desc">Type in your mobile PIN</string>
+    <string name="check_pin_forgot_pin">I forgot my PIN</string>
+
+    <string name="pin_verification_fragment_btn">Confirm and go</string>
+    <string name="pin_verification_fragment_desc">
+        <![CDATA[
+        We\'ve sent you a SMS message.<br>
+        Type in the mobile PIN you received.
+        ]]>
+    </string>
+
+    <string name="info_fragment_full_name">Your full name</string>
+    <string name="info_fragment_organization_email">Organization email</string>
+    <string name="info_fragment_password">Create a password</string>
+    <string name="info_fragment_btn">Confirm and go</string>
+
+    <string name="permission_read_phone_state_rational">Permission is required to get your phone number. just to make it easier going into Olly.</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+
+    <string name="pin_input_method_label">Pin Keyboard</string>
+    <string name="pin_input_method_settings">Pin Keyboard Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Facebook ID  -->
+    <string name="facebook_app_id">151227695355499</string>
+
+    <!--Pin KeyBoard Button -->
+    <string name="KeyboardPin_1">1</string>
+    <string name="KeyboardPin_2">2</string>
+    <string name="KeyboardPin_3">3</string>
+    <string name="KeyboardPin_4">4</string>
+    <string name="KeyboardPin_5">5</string>
+    <string name="KeyboardPin_6">6</string>
+    <string name="KeyboardPin_7">7</string>
+    <string name="KeyboardPin_8">8</string>
+    <string name="KeyboardPin_9">9</string>
+    <string name="KeyboardPin_0">0</string>
+    <string name="KeyboardPin_ok">OK</string>
+    <string name="KeyboardPin_forgetpin">FORGET \n PIN</string>
+    <string name="KeyboardPin_resendpin">RESEND \n PIN</string>
+
+
+    <!-- updated Strings resources-->
+    <string name="str_enter_phone_number">Enter your phone number</string>
+    <string name="str_pay_credit_in_time">Pay my credit \nback in time</string>
+    <string name="str_terms_conditions">Terms and conditions</string>
+    <string name="str_name_first">First name</string>
+
+
+    <string name="str_msg_signup">
+        By signing up with Olly you agree to pay at least 20% of the credit available at the end of the month
+    </string>
+
+    <string name="str_resend_otp">Resend OTP</string>
+    <string name="str_change_numb">Change number</string>
+    <string name="str_msg_password">
+        Please remember this password as it will help you\nto secure Olly account
+    </string>
+    <string name="str_get_credit">Get credit in 3 minutes</string>
+    <string name="str_your_phone_no">Your phone number</string>
+    <string name="str_enter_phone_no">Enter your phone number</string>
+
+    <string name="str_first_name">First name</string>
+    <string name="str_last_name">Last name</string>
+    <string name="str_email">Your Email ID</string>
+    <string name="str_dob">Date of birth (DD/MM/YYYY)</string>
+    <string name="str_password">Create a password</string>
+
+    <string name="str_msg_enter_otp">
+        Enter 4-digit OTP code\nwe sent
+    </string>
+
+    <string name="str_page_no_1">1/4</string>
+    <string name="str_page_no_2">2/4</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_enter_details">Enter your details</string>
+    <string name="empty_field">Can\'t be left empty</string>
+    <string name="invalid_entry">Invalid entry</string>
+
+
+    <!--ResetPinActivity String Resources-->
+    <string name="str_page_no_3">3/3</string>
+
+    <string name="str_create_pin">
+        Create your 4-digit PIN code
+    </string>
+
+    <string name="str_msg_pin_reason">
+        You will be asked for this PIN code every time you will open Olly app
+    </string>
+
+    ReadTermsConditionActivityvity String Resources-->
+    <string name="str_card_on_way">Your card is on its way!</string>
+    <string name="str_msg_signup_complete">
+        Congratulation, your card is now being delivered. Meanwhile we\'d like you to carefully read Olly Terms and Conditions.
+    </string>
+
+    <string name="str_read_termsconditions">
+        Read Olly Terms and Conditions
+    </string>
+
+    <string name="str_pin_hint">
+        \u25CF\u25CF\u25CF\u25CF
+    </string>
+
+    <!--New number dialog-->
+    <string name="str_new_phone_no">Enter new phone number</string>
+
+    <!--Signin Activity resources-->
+    <string name="str_welcome_back">Welcome back,\n</string>
+    <string name="str_enter_password">Enter your password</string>
+    <string name="msg_forget_password">Forgot\npassword?</string>
+    <string name="msg_forget_pin">Forgot\nPIN?</string>
+
+    <string name="str_enter_pin_code">
+        Enter your 4-digit PIN code
+    </string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!--Recover pin resources-->
+    <string name="str_recover_pin">Recover your PIN code</string>
+
+    <!--Recover pin details resources-->
+    <string name="str_your_password">Your password</string>
+
+    <!--Recover pin completed resources-->
+    <string name="str_pin_reset">PIN code has been resetted</string>
+    <string name="str_msg_pin_comp">Check your inbox and follow the instructions we\'ve sent</string>
+    <string name="str_back_login">
+        Back to Login
+    </string>
+
+
+    <!--Recover by phone call resources-->
+    <string name="str_heading_call_customer">Looks like you forgot your password and PIN code</string>
+    <string name="str_msg_call_customer">
+        We\'re sorry but for security reasons we can\'t recover your account.
+        Please contact our customer service for further assistance
+    </string>
+    <string name="str_call_customer">Contact Olly Customer Service</string>
+
+
+    <!--Recover password resources-->
+    <string name="str_recover_password">Recover your password</string>
+    <string name="str_last_pin">Last used PIN code</string>
+    <string name="str_password_reset">A password recover sent!</string>
+    <string name="str_msg_password_reset">Check your inbox and click on the link we\'ve sent to recover your password</string>
+
+
+    <!--Landing page resouces-->
+    <string name="str_img_landing_phone">Phone Image</string>
+    <string name="str_img_landing_tagline">A digital credit app + \npayment card for India\'s \nworking masses</string>
+
+    <!-- common resouces -->
+    <string name="str_common_image_animation">image/Animation</string>
+
+
+    <!--card home resources-->
+    <string name="str_share_card">Share your PAN number to get \u20B9500 more</string>
+    <string name="str_enter_pan_numb">Enter PAN number</string>
+    <string name="str_card_value">card value \u20B9</string>
+    <string name="str_copy_card_number">Copy card number</string>
+    <string name="str_demo_cash">\u20B912345</string>
+    <string name="rs_symbol">\u20B9</string>
+    <string name="str_demo_trans">Paytm Cash Order No.33433311223</string>
+    <string name="str_last_trans">Last transaction: 19 jul 2017 @ 12:46pm</string>
+    <string name="str_rem_credit">You are eligible to 25% of available Olly Credit</string>
+    <string name="str_days_repay"> left to repay credit</string>
+
+
+    <!--user detail step one-->
+    <string name="str_detail1_msg_dob">If you are under the age of 18 , you are not eligible for Olly services.</string>
+    <string name="str_detail2_msg_email">Please provide us with your corporate email</string>
+    <string name="open_nav">open</string>
+    <string name="close_nav">close</string>
+
+
+    <!--verify bank strings-->
+
+    <string name="register_bank_payment_onereupee">
+        You will be asked to make a payment of ₹1 to verify your bank account
+    </string>
+
+    <!--User Feedback Strings-->
+    <string name="feedback_us">Give us your feedback</string>
+    <string name="feedback_comment">Experiencing an issue? Have a comment? \nSay it - we\'ll get back to you.</string>
+    <string name="share_thoughts">Share your thoughts</string>
+    <string name="user_feedback_send_thanks">Thank you for sharing with us. Don\'t \n hesitate to get in touch again - we are \n here
+        to make your Olly experience as \n delightful as possible! </string>
+
+
+</resources>

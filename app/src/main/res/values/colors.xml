@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#232c83</color>
+    <!--<color name="colorPrimaryDark">#053296</color>-->
+    <color name="colorPrimaryDark">#1c2469</color>
+    <color name="colorAccent">#00bcd4</color>
+
+    <color name="gray_2">#888888</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+
+
+    <color name="green_1">#00bcd4</color>
+    <color name="green_2">#18ffff</color>
+    <color name="gray_1">#ddebf9</color>
+    <color name="red_1">#e5707b</color>
+
+    <color name="blue_t">#003781</color>
+    <color name="blue_t_1">#58709f</color>
+    <color name="gray_t">#8d9ec6</color>
+    <color name="red_t">#ff7e87</color>
+    <color name="green_t">#17cda0</color>
+
+    <color name="keyboard_bg">#172649</color>
+    <color name="key_color_alt">#84000000</color>
+    <color name="key_color">#00172649</color>
+
+
+    <!--updated color scheme -->
+
+
+    <color name="blue_nav_nar">#232c83</color>
+    <color name="blue_app_bar">#1c2469</color>
+    <color name="blue_1">#283593</color>
+    <color name="blue_2">#3949ab</color>
+    <color name="blue_main">#1A237E</color>
+    <color name="cyan_main">#00aad4</color>
+    <color name="cyan_light">#00e5ff</color>
+    <color name="blue_text">#1E2F4D</color>
+    <color name="gray_inactive">#BBC0C9</color>
+    <color name="blue_bg">#1E45A0</color>
+    <color name="blue_circular">#4150AA</color>
+    <color name="gray_main">#728290</color>
+    <color name="gray_main_alpha_50">#80728290</color>
+    <color name="red_msg">#e5707b</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black_trans">#30ffffff</color>
+
+    <color name="progress_green">#07b954</color>
+
+    <color name="background">#F1F1F1</color>
+    <color name="blue_icon">#1E2E4B</color>
+
+
+
+
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="deposit_green">#ff14c416</color>
+    <color name="light_green">#ff8bf98a</color>
+    <color name="light_yellow">#fff9ac06</color>
+    <color name="light_blue">#FF87DBF9</color>
+    <color name="light_red">#fff9393c</color>
+    <color name="light_grey">#ffd1d1d1</color>
+    <color name="blue">#ff003fff</color>
+    <color name="red">#FF0000</color>
+
+    <!-- A light Holo shade of blue -->
+    <color name="blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of gray -->
+    <color name="gray_light">#33999999</color>
+    <!-- A dark Holo shade of gray -->
+    <color name="gray_dark">#BB666666</color>
+    <!-- A light Holo shade of green -->
+    <color name="green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="blue_bright">#ff00ddff</color>
+    <!-- A really bright Holo shade of gray -->
+    <color name="gray_bright">#33CCCCCC</color>
+
+    <color name="sky">#24c3ce</color>
+    <color name="skylight">#5cdae3</color>
+    <color name="menudark">#283742</color>
+    <color name="menulight">#1c272f</color>
+    <color name="headings">#666666</color>
+    <color name="view">#c2bfbf</color>
+    <color name="pink">#db2a4c</color>
+    <color name="pinklight">#d796a3</color>
+    <color name="headingdark">#4e4d4d</color>
+
+    <color name="yellow">#f4ac03</color>
+    <color name="yellowGreeen">#82ea0c</color>
+    <color name="yellowGreeen2">#d0ea0c</color>
+    <color name="yellowGreeen3">#e4e713</color>
+    <color name="parrot">#3bf14d</color>
+    <color name="blueParrot">#3bf1a5</color>
+    <color name="blueParrot0">#19ed91</color>
+    <color name="blueParrot2">#24f180</color>
+    <color name="seagreen">#25cc98</color>
+    <color name="dark">#212C35</color>
+    <color name="dark_box">#293d4e</color>
+    <color name="Black">#000</color>
+    <color name="dark_progress_color">#545f68</color>
+    <color name="defaul_pr">#eaeaea</color>
+    <color name="dark_grey">#bebcbc</color>
+    <color name="default_color">#f6f6f6</color>
+    <color name="red_error">#F5414A</color>
+    <color name="green_main">#11B96C</color>
+
+<!--user tips-->
+
+    <color name="pine_green">#00727e</color>
+    <color name="slate_blue">#45288e</color>
+    <color name="user_tip_card_color">#362072</color>
+    <color name="iris_blue">#00b4d4</color>
+
+
+</resources>

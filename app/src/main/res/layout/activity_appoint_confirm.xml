@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.card.verify.kyc.appoint_address.AppointAddressActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_15"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/margin_module_7"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctb_kyc"
+            style="@style/ctb_collapse_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_appoint_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_close_white"
+                app:title="Appointment confirmed">
+
+                <TextView
+                    android:id="@+id/text_user_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:gravity="end|center"
+                    android:text="2/2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_muli_bold"
+                    android:textStyle="bold"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_module_8">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_module_4"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:gravity="left"
+                android:text="You have successfully scheduled KYC collection!"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/headline_regular_muli_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_module_5.5"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:gravity="left"
+                android:text="You will be contacted by our agent within 48 hours to confirm the appointment time and address."
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/body_3_muli_bold"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                app:cardCornerRadius="@dimen/cardview_default_radius"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_module_2"
+                    android:paddingRight="@dimen/margin_module_2"
+                    android:paddingTop="@dimen/margin_module_2.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_module_2.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_module_4"
+                            android:layout_marginTop="@dimen/margin_module_0.25"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_date_new"/>
+
+                        <TextView
+                            android:id="@+id/tv_appoint_confirm_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="date"
+                            android:text="Date"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/label_muli_bold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_module_2.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/margin_module_4"
+                            android:layout_marginTop="@dimen/margin_module_0.25"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_time_new"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_appoint_confirm_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="time"
+                            android:text="time"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/label_muli_bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_module_2.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_module_4"
+                            android:layout_marginTop="@dimen/margin_module_0.5"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_location"/>
+
+                        <TextView
+                            android:id="@+id/tv_appoint_confirm_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="location"
+                            android:text="Location"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/label_muli_bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_module_2.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_module_4"
+                            android:layout_marginTop="@dimen/margin_module_0.25"
+                            android:tint="@color/blue_text"
+                            app:srcCompat="@drawable/ic_phone"/>
+
+                        <TextView
+                            android:id="@+id/tv_appoint_confirm_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:tag="contact"
+                            android:text="Phone"
+                            android:textColor="@color/blue_text"
+                            android:textSize="@dimen/label_muli_bold"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/btn_appoint_confirm_reschedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_2.5"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:padding="@dimen/margin_module_0.5"
+                android:text="Reschedule KYC appointment"
+                android:textAllCaps="false"
+                android:textColor="@color/cyan_main"
+                android:textSize="@dimen/caption_2_caps_muli_bold"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/btn_appoint_confirm_contactolly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_1"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:padding="@dimen/margin_module_0.5"
+                android:text="Contact Olly help"
+                android:textAllCaps="false"
+                android:textColor="@color/cyan_main"
+                android:textSize="@dimen/caption_2_caps_muli_bold"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

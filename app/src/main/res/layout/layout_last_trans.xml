@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:elevation="@dimen/cardview_default_elevation"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/margin_module_1"
+              android:paddingLeft="@dimen/margin_module_2"
+              android:paddingRight="@dimen/margin_module_2"
+              android:paddingTop="@dimen/margin_module_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <FrameLayout
+                android:layout_marginLeft="-5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="21sp"
+                    android:layout_height="21sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="6sp"
+                    android:background="@drawable/ic_rupee_symbol_wrapper"
+                    android:backgroundTint="@color/blue_main"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lastTrans_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:drawableTint="@color/blue_main"
+                    android:gravity="bottom"
+                    tools:text="12345"
+                    android:textColor="@color/blue_main"
+                    android:textSize="@dimen/headline_big"/>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="3sp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2sp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_rupee_symbol_wrapper"
+                    android:backgroundTint="@color/blue_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lastTrans_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-12dp"
+                    android:gravity="bottom"
+                    tools:text="@string/str_demo_cash"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/title_semi_bold"
+                    tools:ignore="MissingPrefix"/>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_module_0.5"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_avil_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:text="Available Balance"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_main"
+                android:textSize="@dimen/caption_1_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/tv_used_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="used"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_main"
+                android:textSize="@dimen/caption_1_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_latest_trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module_2"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:alpha="0.2"
+            android:background="@color/gray_main"/>
+
+
+        <TextView
+            android:id="@+id/tv_lastTrans_lastTransDatetime"
+            fontPath="fonts/muli-semibold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module_2"
+            android:gravity="start"
+            android:text="@string/str_last_trans"
+            android:textColor="@color/gray_main"
+            android:textSize="@dimen/caption_1_semi_bold"
+            tools:ignore="MissingPrefix"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module_0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tv_lastTrans_lastTranslable"
+                fontPath="fonts/muli-semibold.ttf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="start"
+                android:minWidth="240dp"
+                android:text="@string/str_demo_trans"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/body_1_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="0.25"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1sp"
+                    android:background="@drawable/ic_rupee_symbol_wrapper"
+                    android:backgroundTint="@color/blue_text"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_lastTrans_lastTranscost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="-4dp"
+                    android:gravity="right|bottom"
+                    android:text="123"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/body_0_muli_bold"
+                    tools:ignore="MissingPrefix"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_lastTrans_allactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_module_4"
+        android:layout_marginTop="@dimen/margin_module_2"
+        android:background="@color/transparent"
+        android:text="See all card history"
+        android:textColor="@color/cyan_main"
+        android:textSize="@dimen/caption_2_muli_bold"
+        tools:ignore="MissingPrefix"
+        />
+
+</LinearLayout>

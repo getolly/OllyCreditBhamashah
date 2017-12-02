@@ -1,0 +1,97 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical"
+    tools:context="com.ollycredit.ui.card.card_history.fragments.transaction.TransactionFragment">
+
+    <include
+        android:id="@+id/trans_balance"
+        layout="@layout/layout_last_trans"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/trans_layout_rv_nocontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_4.5"
+                android:layout_marginRight="@dimen/margin_module_4.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module_9"
+                    android:gravity="center"
+                    android:text="Explore your Olly Card !"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/headline_bold_muli_bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module_3"
+                    android:gravity="center"
+                    android:text="It\'s about time you see that movie. Or maybe a getsome dinner ordered for tonight?"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/body_2_muli_bold"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="@dimen/margin_module_2"
+                    android:alpha="0.5"
+                    android:src="@drawable/img_shopping"
+                    android:tint="@color/gray_main"
+                    />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/trans_layout_rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                fontPath="fonts/muli-semibold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:paddingBottom="@dimen/margin_module_1.5"
+                android:paddingLeft="@dimen/margin_module_2"
+                android:paddingRight="@dimen/margin_module_2"
+                android:paddingTop="@dimen/margin_module_2.5"
+                android:text="Transaction History"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_caps_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:elevation="@dimen/cardview_default_elevation"
+                android:id="@+id/rv_trans_history"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

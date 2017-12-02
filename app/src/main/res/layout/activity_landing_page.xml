@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:background="@drawable/bg_landing"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="@dimen/margin_module_8"
+                android:src="@drawable/logo_olly_full"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_module_5.5"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:gravity="center"
+                android:text="A micro credit card for working India"
+                android:textColor="@color/blue_main"
+                android:textSize="28sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Made in collaboration with"
+                android:gravity="center"
+                android:textSize="@dimen/caption_1_caps_semi_bold"
+                android:textColor="@color/blue_text"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_module_0.5"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_img_logo_dcb" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <TextView
+            fontPath="fonts/muli-bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_module_4"
+            android:layout_marginTop="@dimen/margin_module_4"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/body_2_caps_muli_bold"
+            android:text="Activate your card now"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/body_2_caps_muli_bold"
+            android:textStyle="bold"
+            tools:ignore="MissingPrefix"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:contentDescription="@string/str_img_landing_phone"
+                android:padding="@dimen/margin_module_1.5"
+                android:scaleType="fitCenter"
+                android:tint="@color/blue_text"
+                app:srcCompat="@drawable/ic_phone"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/landing_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/margin_module_1.5"
+                    android:paddingTop="@dimen/margin_module_1.5"
+                    android:text="@string/str_your_phone_no"
+                    android:textColor="@color/gray_main"
+                    android:textSize="@dimen/label_muli_bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

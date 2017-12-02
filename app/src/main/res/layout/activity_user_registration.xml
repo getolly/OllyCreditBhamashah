@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.ollycredit.ui.onboarding.signup.user_details.step_one.UserRegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ScrollView
+        android:id="@+id/sv_userdetailone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_module_12">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_details_one"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_module_2"
+                    android:src="@drawable/logo_olly_navbar"/>
+
+                <TextView
+                    android:id="@+id/text_user_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:gravity="end|center"
+                    android:text="@string/str_page_no_2"
+                    android:textSize="@dimen/title_muli_bold"
+                    android:textStyle="bold"/>
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <TextView
+                fontPath="fonts/muli-bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_module_4"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:gravity="left"
+                android:text="Welcome to Olly!"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/headline_regular_muli_regular"
+                tools:ignore="MissingPrefix"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_2"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:tag="fname">
+
+                    <EditText
+                        android:id="@+id/edit_detail_one_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/str_first_name"
+                        android:inputType="textPersonName|textNoSuggestions"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:tag="fname"
+                        android:textColor="@color/gray_main"
+                        android:textSize="@dimen/label_muli_bold"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_lastname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:tag="lname">
+
+                    <EditText
+                        android:id="@+id/edit_detail_one_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/str_last_name"
+                        android:inputType="textPersonName|textNoSuggestions"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:scrollbars="horizontal"
+                        android:tag="lname"
+                        android:textColor="@color/gray_main"
+                        android:textSize="@dimen/label_muli_bold"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_module_2"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:tag="dob">
+
+                    <EditText
+                        android:id="@+id/edit_detail_one_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Date of birth"
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:tag="dob"
+                        android:textColor="@color/gray_main"
+                        android:textSize="@dimen/label_muli_bold"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/iv_calender_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="@dimen/margin_module_2.5"
+                    android:paddingTop="@dimen/margin_module_1.85"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/gray_main"
+                    app:srcCompat="@drawable/ic_calender"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_scollto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_module_2.5"
+                android:paddingRight="@dimen/margin_module_2.5"
+                android:text="DD/MM/YYYY"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_muli_bold"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_detail_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_2"
+                android:tag="email">
+
+                <EditText
+                    android:id="@+id/edit_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:nextFocusForward="@+id/edit_user_password"
+                    android:paddingBottom="@dimen/margin_module_1.5"
+                    android:paddingTop="@dimen/margin_module_1.5"
+                    android:scrollbars="horizontal"
+                    android:tag="email"
+                    android:textColor="@color/gray_main"
+                    android:textColorHint="@color/cyan_main"
+                    android:textSize="@dimen/label_muli_bold"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_pannumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:paddingTop="@dimen/margin_module_1.5"
+                android:tag="pan"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/et_verify_pannumb"
+                    style="@style/et_normal_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="PAN card number"
+                    android:inputType="textNoSuggestions|textCapCharacters"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:tag="pan"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_text"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        app:arcColor="@color/cyan_main"
+        app:arcWidth="3dp"
+        app:finalIcon="@drawable/ic_arrow_forward"
+        >
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_user_submitDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="@dimen/margin_module_2"
+            android:src="@drawable/ic_arrow_forward"
+            app:backgroundTint="@color/blue_bg"
+            app:fabSize="normal"
+            />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+
+</FrameLayout>

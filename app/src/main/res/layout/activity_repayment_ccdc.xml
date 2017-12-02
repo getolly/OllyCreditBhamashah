@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.ollycredit.ui.repayments.RepaymentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_repayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_repayment"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            app:navigationIcon="@drawable/ic_arrow_back_white"
+            app:title="Complete repayment"
+            app:titleTextColor="@color/white"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_repay_amount_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/red_error"
+                    app:srcCompat="@drawable/ic_block"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module_2"
+                    android:padding="@dimen/margin_module_1"
+                    android:text="Something wrong while processing your payment. Please try again"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red_error"
+                    android:textSize="@dimen/body_2_muli_bold"/>
+
+                <TextView
+                    android:id="@+id/tv_repay_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_module_1"
+                    android:text="need help? we can help"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/saved_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_payment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_1"
+                android:paddingLeft="@dimen/margin_module_2"
+                android:paddingRight="@dimen/margin_module_2"
+                android:paddingTop="@dimen/margin_module_2"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_caps_muli_bold"
+                tools:text="Payment"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_add_new_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_1"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:minHeight="@dimen/margin_module_8"
+                android:orientation="horizontal"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_module_2"
+                    android:tint="@color/green_main"
+                    app:srcCompat="@drawable/ic_debitcard"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_module_9"
+                    android:text="Add a card"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green_main"
+                    android:textSize="@dimen/body_2_reg"/>
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_module_1"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:text="Other Payment Options"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_caps_muli_bold"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_debit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:minHeight="@dimen/margin_module_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_module_2"
+                        android:tint="@color/green_main"
+                        app:srcCompat="@drawable/ic_debitcard"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_module_9"
+                        android:tag="date"
+                        android:text="Debit Card"
+                        android:textColor="@color/green_main"
+                        android:textSize="@dimen/body_2_reg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:alpha="0.3"
+                        android:background="@color/gray_main"/>
+
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_net_banking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:minHeight="@dimen/margin_module_8"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_module_2"
+                        android:tint="@color/green_main"
+                        app:srcCompat="@drawable/ic_bank"/>
+
+                    <TextView
+                        android:id="@+id/tv_pay_method_netbank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_module_9"
+                        android:tag="date"
+                        android:text="Net-Banking"
+                        android:textColor="@color/green_main"
+                        android:textSize="@dimen/body_2_reg"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:alpha="0.3"
+                        android:background="@color/gray_main"/>
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom"
+        app:layout_anchor="@id/nestedScroll"
+        android:layout_marginBottom="@dimen/margin_module_1"
+        android:paddingLeft="@dimen/margin_module_2"
+        android:paddingRight="@dimen/margin_module_2"
+        android:paddingTop="@dimen/margin_module_2"
+        android:textColor="@color/blue_text"
+        tools:text="phone number"
+        android:id="@+id/tv_helpline"
+        android:textSize="@dimen/caption_1_caps_muli_bold"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#303f9f"
+              android:orientation="vertical"
+              tools:context="com.ollycredit.ui.navigation.NavDrawerFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_module_2"
+        android:orientation="vertical"
+
+        android:paddingBottom="@dimen/margin_module_2"
+        android:paddingTop="@dimen/margin_module_4">
+
+
+        <TextView
+            android:id="@+id/nav_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="User Name"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_reg"
+            tools:ignore="MissingPrefix"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_credit_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_10"
+        android:background="@color/blue_main"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/nav_credit_image"
+            android:layout_width="@dimen/margin_module_6"
+            android:layout_height="@dimen/margin_module_6"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_module_1.5"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_add_bank"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_module_9"
+            android:layout_marginRight="@dimen/margin_module_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nav_credit_task_title"
+                fontPath="fonts/muli-semibold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit limit task title"
+                android:textColor="@color/cyan_light"
+                android:textSize="@dimen/body_1_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/nav_credit_task_desc"
+                fontPath="fonts/muli-semibold.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit limit bonus bosy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/caption_1_caps_semi_bold"
+                tools:ignore="MissingPrefix"/>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_1"
+        android:paddingTop="@dimen/margin_module_1.5"
+        tools:listitem="@layout/layout_nav_list"/>
+
+</LinearLayout>

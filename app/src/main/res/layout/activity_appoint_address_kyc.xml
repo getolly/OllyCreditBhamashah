@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.card.verify.kyc.appoint_confirm.AppointConfirmActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_15"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/margin_module_7"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctb_kyc"
+            style="@style/ctb_collapse_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_appoint_address"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:minHeight="@dimen/margin_module_7"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_back_white"
+                app:title="KYC location">
+
+                <TextView
+                    android:id="@+id/text_user_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:gravity="end|center"
+                    android:text="2/2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_muli_bold"
+                    android:textStyle="bold"/>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_module_25"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_module_4"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:gravity="left"
+                android:text="Appointment Location"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/headline_regular_muli_regular"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:text="Select location where Olly Agent will meet you to collect your Kyc"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/body_2_reg"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_module_2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module_0.5"
+                    android:paddingTop="@dimen/margin_module_2.5"
+                    android:tint="@color/blue_text"
+                    app:srcCompat="@drawable/ic_location"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_appoint_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_module_2"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:tag="pin"
+                    android:textColorHint="@color/blue_text">
+
+                    <EditText
+                        android:id="@+id/edit_appoint_address_pin"
+                        style="@style/et_normal_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="PIN Code"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:tag="pin"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_appoint_address_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_7"
+                android:layout_marginRight="@dimen/margin_module_4"
+                android:tag="addone"
+                android:textColorHint="@color/blue_text">
+
+                <EditText
+                    android:id="@+id/edit_appoint_address_one"
+                    style="@style/et_normal_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:scrollbars="horizontal|vertical"
+                    android:tag="addone"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_appoint_address_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_module_7"
+                android:layout_marginRight="@dimen/margin_module_4"
+                android:tag="addtwo"
+                android:textColorHint="@color/blue_text"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edit_appoint_address_two"
+                    style="@style/et_normal_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address 2(optional)"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:tag="addtwo"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_module_2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_module_0.5"
+                    android:paddingTop="@dimen/margin_module_2.5"
+                    android:tint="@color/blue_text"
+                    app:srcCompat="@drawable/ic_phone"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_appoint_address_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_module_2"
+                    android:layout_marginRight="@dimen/margin_module_2"
+                    android:tag="contact"
+                    android:textColorHint="@color/blue_text">
+
+                    <EditText
+                        android:id="@+id/edit_appoint_address_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Your contact number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:tag="contact"
+                        style="@style/et_normal_style"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_module_2"
+                android:layout_marginLeft="@dimen/margin_module_2"
+                android:layout_marginRight="@dimen/margin_module_2"
+                android:layout_marginTop="@dimen/margin_module_4"
+                android:gravity="left"
+                android:text="I confirm that i will be available for the dates and time i selected at the location i provided"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/caption_1_caps_muli_bold"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/fabProgressCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:arcColor="@color/cyan_main"
+        app:arcWidth="3dp"
+        android:layout_gravity="right|bottom"
+        app:finalIcon="@drawable/ic_arrow_forward"
+        >
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_appoint_address_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/margin_module_2"
+        android:src="@drawable/ic_arrow_forward"
+        app:backgroundTint="@color/blue_bg"
+        app:fabSize="normal"
+        />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+</android.support.design.widget.CoordinatorLayout>

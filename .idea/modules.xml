@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OllyCredit.iml" filepath="$PROJECT_DIR$/OllyCredit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OllyCreditApp.iml" filepath="$PROJECT_DIR$/OllyCreditApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OllyCreditApp-development-b6c1b7d5380eede0a621790d58988f2a0fc5a38f.iml" filepath="$PROJECT_DIR$/OllyCreditApp-development-b6c1b7d5380eede0a621790d58988f2a0fc5a38f.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdkui/sdkui.iml" filepath="$PROJECT_DIR$/sdkui/sdkui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdkui/sdkui.iml" filepath="$PROJECT_DIR$/sdkui/sdkui.iml" />
+    </modules>
+  </component>
+</project>

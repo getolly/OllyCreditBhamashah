@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialoginc_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_module_4"
+        android:layout_marginLeft="@dimen/margin_module_3"
+        android:layout_marginRight="@dimen/margin_module_3"
+        android:layout_marginTop="@dimen/margin_module_3"
+        android:text="You just have increased your credit limit by \u20B92000!"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/headline_regular_muli_regular"/>
+
+    <TextView
+        android:id="@+id/tv_dialoginc_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_module_4"
+        android:text="You just have increased your credit limit by \u20B92000 !"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/body_1_semi_bold"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/iv_dialoginc_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_module_6"
+        android:alpha="0.5"
+        android:minHeight="@dimen/margin_module_27"
+        app:srcCompat="@drawable/ic_cake"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_module_2"
+        android:minHeight="@dimen/margin_module_6">
+
+        <Button
+            android:id="@+id/btn_dialoginc_getmore"
+            fontPath="fonts/muli-bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@color/transparent"
+            android:text="Get more credit"
+            android:textAllCaps="true"
+            android:textColor="@color/cyan_main"
+            android:textStyle="bold"
+            android:textSize="@dimen/caption_2_muli_bold"
+            tools:ignore="MissingPrefix"
+            />
+
+        <Button
+            fontPath="fonts/muli-bold.ttf"
+            android:id="@+id/btn_dialoginc_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/transparent"
+            android:text="Got it"
+            android:textAllCaps="true"
+            android:textColor="@color/cyan_main"
+            android:textStyle="bold"
+            android:textSize="@dimen/caption_2_muli_bold"
+            tools:ignore="MissingPrefix"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/nav_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#283593"
+    android:padding="@dimen/margin_module_2"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="@dimen/margin_module_3"
+        android:layout_height="@dimen/margin_module_3"
+        android:tint="@color/white"
+        android:alpha="0.8"
+        app:srcCompat="@drawable/ic_profile"
+        />
+
+    <TextView
+        android:id="@+id/nav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_module_4"
+        android:gravity="center"
+        android:text="Sample"
+        android:textColor="@color/white" />
+</LinearLayout>

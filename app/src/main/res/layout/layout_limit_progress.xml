@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_module_9"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_module_2"
+    android:paddingRight="@dimen/margin_module_2"
+    android:weightSum="1"
+    app:layout_collapseMode="parallax"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:paddingBottom="@dimen/margin_module_1"
+        android:paddingTop="@dimen/margin_module_1">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5sp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="21sp"
+                android:layout_height="21sp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="6sp"
+                android:background="@drawable/ic_rupee_symbol_wrapper"
+                android:backgroundTint="@color/cyan_light"
+                />
+
+            <TextView
+                android:id="@+id/tv_credit_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:gravity="bottom"
+                tools:text="12345"
+                android:textColor="@color/cyan_light"
+                android:textSize="@dimen/headline_big"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_credit_total"
+            fontPath="fonts/muli-bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/margin_module_0.5"
+            android:alpha="0.5"
+            android:gravity="bottom"
+            tools:text="@string/str_demo_cash"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body_0_muli_bold"
+            tools:ignore="MissingPrefix"/>
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pb_credit_limitprogress"
+        style="@style/HorizontalProgressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/shape_progress_bar_horizontal"
+        android:progressTint="@color/cyan_light"
+        />
+
+    <TextView
+        android:id="@+id/tv_credit_percent_avail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_module_1"
+        android:paddingTop="@dimen/margin_module_1.5"
+        tools:text="You are using 25% of your available limit"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

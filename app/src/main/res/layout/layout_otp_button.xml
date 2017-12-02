@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_module_0.5"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="timer"
+        android:layout_marginLeft="@dimen/margin_module_0.25"
+        android:gravity="left|center"
+        android:visibility="visible"
+        android:textColor="@color/gray_main"
+        android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="@dimen/caption_2_muli_bold"/>
+
+    <Button
+        android:visibility="visible"
+        android:id="@+id/btn_otp_dialog_resendOtp"
+        fontPath="fonts/muli-bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/str_resend_otp"
+        android:textAllCaps="false"
+        android:textColor="@color/cyan_main"
+        android:textSize="@dimen/caption_2_muli_bold"
+        android:textStyle="bold"
+        tools:ignore="MissingPrefix"/>
+
+
+</FrameLayout>

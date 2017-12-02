@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rv_repay_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Repayment 15/06 - 15/06"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/body_3_muli_bold"/>
+
+        <TextView
+            android:id="@+id/rv_repay_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module_1"
+            android:text="15 july 2017 @ 12:46 pm"
+            android:textColor="@color/gray_main"
+            android:textSize="@dimen/body_2_muli_bold"/>
+
+        <TextView
+            android:id="@+id/rv_repay_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_module_1"
+            android:text="On-time/Free"
+            android:textColor="@color/green_t"
+            android:textSize="@dimen/body_1_muli_bold"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/rv_repay_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:text="@string/str_demo_cash"
+            android:textColor="@color/blue_text"
+            android:textSize="@dimen/body_3_muli_bold"/>
+
+        <TextView
+            android:id="@+id/rv_repay_penalty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:text="@string/str_demo_cash"
+            android:textColor="@color/red_msg"
+            android:textSize="@dimen/body_1_muli_bold"/>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

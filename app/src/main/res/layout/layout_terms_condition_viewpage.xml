@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_terms_condition"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_6"
+        android:background="@color/white">
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/navbar_tabs"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/margin_module_2"-->
+        <!--android:layout_weight="0.6"-->
+        <!--android:background="@color/white"-->
+        <!--app:tabGravity="center"-->
+        <!--app:tabSelectedTextColor="@color/cyan_main"-->
+        <!--app:tabTextColor="@color/gray_main"/>-->
+
+
+        <ProgressBar
+            android:id="@+id/pb_tc_increment"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="@dimen/margin_module_22"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:layout_marginRight="@dimen/margin_module_2"
+            android:max="5"
+            android:progress="0"/>
+
+
+        <Button
+            android:id="@+id/btn_tc_agree"
+            fontPath="fonts/muli-bold.ttf"
+            android:layout_width="@dimen/margin_module_12"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:paddingLeft="@dimen/margin_module_2"
+            android:paddingRight="@dimen/margin_module_2"
+            android:text="I Agree"
+            android:textColor="@color/cyan_main"
+            android:textStyle="bold"
+            android:textSize="@dimen/caption_2_muli_bold"
+            tools:ignore="MissingPrefix"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

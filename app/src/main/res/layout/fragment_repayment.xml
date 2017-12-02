@@ -1,0 +1,49 @@
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/nsv_repayment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.ollycredit.ui.card.card_history.fragments.repayments.RepaymentFragment">
+
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/trans_payback"
+            layout="@layout/layout_dashboard_payback_notify"/>
+
+        <LinearLayout
+            android:id="@+id/layout_repay_rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:padding="@dimen/margin_module_2"
+                android:text="Repayment History"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/body_1_muli_bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_repaymenthistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/cardview_default_elevation"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

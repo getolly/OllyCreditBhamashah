@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green_t"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_module_2">
+
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:layout_width="@dimen/margin_module_29"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_module_12"
+        android:layout_marginTop="@dimen/margin_module_1"
+        android:text="@string/str_share_card"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_muli_bold"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_sharepin_pan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_module_7"
+        android:layout_marginTop="@dimen/margin_module_6"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_module_1.5"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/str_img_landing_phone"
+            android:paddingBottom="@dimen/margin_module_1.5"
+            android:paddingTop="@dimen/margin_module_1.5"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_clipboard"
+            android:tint="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_module_1"
+            android:layout_marginLeft="@dimen/margin_module_2"
+            android:layout_weight="0.85"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="@dimen/margin_module_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="@string/str_enter_pan_numb"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/label_muli_bold"/>
+
+            <View
+                android:layout_marginTop="@dimen/margin_module_0.5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
